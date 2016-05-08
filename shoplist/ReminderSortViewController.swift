@@ -14,6 +14,9 @@ class ReminderSortViewController: UITableViewController {
     
     //Outlet for the Table View so we can access it in code
     @IBOutlet var remindersTableView: UITableView!
+
+    @IBOutlet weak var imageIcon: UIImageView!
+
     
     let reminderManager : iCloudReminderManager = iCloudReminderManager()
     
@@ -316,6 +319,23 @@ class ReminderSortViewController: UITableViewController {
         //Get the cell
         let cell : ShoppingListItemTableViewCell = tableView.dequeueReusableCellWithIdentifier("ReminderCell") as! ShoppingListItemTableViewCell
         
+        
+        
+        
+        
+        
+        
+        func configureCell(shoplist: Shoplist) {
+            imageIcon.image = shoplist.getShoplistImg()
+
+        
+        }
+        
+        
+        
+        
+        
+        
         //Based on the settings, set up the auto-capitalisation for the keyboard
         if SettingsUserDefaults.autoCapitalisation{
             
@@ -424,12 +444,11 @@ class ReminderSortViewController: UITableViewController {
         
         return tableView.rowHeight
     }
-}
 
 
 
 
-
+  }
 
 
 

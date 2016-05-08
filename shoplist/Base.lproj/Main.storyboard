@@ -10,25 +10,29 @@
         <scene sceneID="Urh-HJ-TF7">
             <objects>
                 <tableViewController id="MtR-ok-ohg" customClass="ReminderSortViewController" customModule="shoplist" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="h21-ue-Yeq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" id="h21-ue-Yeq">
                         <rect key="frame" x="0.0" y="0.0" width="353" height="663"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iWj-NJ-z74">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReminderCell" id="yti-3g-Cyj" customClass="ShoppingListItemTableViewCell" customModule="shoplist" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="353" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReminderCell" rowHeight="91" id="yti-3g-Cyj" customClass="ShoppingListItemTableViewCell" customModule="shoplist" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="353" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yti-3g-Cyj" id="sEH-2h-PpI">
-                                    <rect key="frame" x="0.0" y="0.0" width="353" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8N-4b-1Cv">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8N-4b-1Cv">
                                             <rect key="frame" x="8" y="4" width="51" height="31"/>
                                             <connections>
                                                 <action selector="completedSwitchValueChanged:" destination="yti-3g-Cyj" eventType="valueChanged" id="dSr-CJ-VCe"/>
                                             </connections>
                                         </switch>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEM-pu-Wmh">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEM-pu-Wmh">
                                             <rect key="frame" x="8" y="-2" width="30" height="37"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                             <state key="normal" title="+">
@@ -38,7 +42,7 @@
                                                 <action selector="addNewTouchUpInside:" destination="yti-3g-Cyj" eventType="touchUpInside" id="3r6-gp-IHG"/>
                                             </connections>
                                         </button>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-Su-3Xe">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-Su-3Xe">
                                             <rect key="frame" x="75" y="8" width="487" height="27"/>
                                             <gestureRecognizers/>
                                             <constraints>
@@ -50,6 +54,13 @@
                                                 <action selector="shoppingListItemTextFieldEditingDidEnd:" destination="yti-3g-Cyj" eventType="editingDidEnd" id="KAv-gc-rTj"/>
                                             </connections>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHD-oW-B7c">
+                                            <rect key="frame" x="266" y="30" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <segue destination="usM-TJ-VwV" kind="show" id="AxP-6h-f2E"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="K6I-Su-3Xe" firstAttribute="top" secondItem="sEH-2h-PpI" secondAttribute="topMargin" id="6MB-Yc-6Jo"/>
@@ -99,6 +110,7 @@
                         </connections>
                     </refreshControl>
                     <connections>
+                        <outlet property="imageIcon" destination="iWj-NJ-z74" id="TNm-hr-zVq"/>
                         <outlet property="remindersTableView" destination="h21-ue-Yeq" id="cdc-2f-gg2"/>
                     </connections>
                 </tableViewController>
@@ -484,6 +496,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lg-Td-CV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2795" y="477.5"/>
+        </scene>
+        <!--Add Shoplist Image Controller-->
+        <scene sceneID="Djs-Ix-Ija">
+            <objects>
+                <viewController id="usM-TJ-VwV" customClass="AddShoplistImageController" customModule="shoplist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QQm-CC-mWp"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Zy-r8-iWO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zEE-n6-vUp">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-5V-xdq">
+                                <rect key="frame" x="76" y="148" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsG-uo-1CT" userLabel="Add Image">
+                                <rect key="frame" x="89" y="160" width="175" height="175"/>
+                                <state key="normal" title="ADD IMAGE">
+                                    <color key="titleColor" red="0.31462541040000003" green="0.66597308479999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addImagePressedd:" destination="usM-TJ-VwV" eventType="touchUpInside" id="8Xs-cw-Cs3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bML-TO-lAx">
+                                <rect key="frame" x="148" y="413" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="createBtnPressedd:" destination="usM-TJ-VwV" eventType="touchUpInside" id="gXn-Wo-p7M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ShoplistImageView" destination="MX3-5V-xdq" id="Jk2-rb-3zw"/>
+                        <outlet property="addImageBtn" destination="tsG-uo-1CT" id="A4T-B8-W2q"/>
+                        <outlet property="createBtn" destination="bML-TO-lAx" id="IFB-H1-9sD"/>
+                        <outlet property="shoplistImageView" destination="MX3-5V-xdq" id="AFP-Qj-Ffb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kH5-yc-Wv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3490" y="1174"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="IRE-FS-VzP">

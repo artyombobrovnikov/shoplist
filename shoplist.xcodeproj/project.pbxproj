@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		842692221CD7D3B30076EAF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842692211CD7D3B30076EAF6 /* AppDelegate.swift */; };
-		842692241CD7D3B30076EAF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842692231CD7D3B30076EAF6 /* ViewController.swift */; };
 		842692271CD7D3B30076EAF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842692251CD7D3B30076EAF6 /* Main.storyboard */; };
 		842692291CD7D3B30076EAF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842692281CD7D3B30076EAF6 /* Assets.xcassets */; };
 		8426922C1CD7D3B30076EAF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426922A1CD7D3B30076EAF6 /* LaunchScreen.storyboard */; };
@@ -20,12 +19,15 @@
 		842692401CD7D57A0076EAF6 /* ReminderSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426923F1CD7D57A0076EAF6 /* ReminderSortViewController.swift */; };
 		842692421CD7D5AA0076EAF6 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842692411CD7D5AA0076EAF6 /* ShoppingListTableViewCell.swift */; };
 		842692441CD7D5E90076EAF6 /* SettingUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842692431CD7D5E90076EAF6 /* SettingUserDefaults.swift */; };
+		843AF6071CDBAB5200D52A3E /* shoplist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 843AF6051CDBAB5200D52A3E /* shoplist.xcdatamodeld */; };
+		843AF6091CDBAF5200D52A3E /* AddShoplistImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF6081CDBAF5200D52A3E /* AddShoplistImageController.swift */; };
+		843AF62C1CDBBACD00D52A3E /* Shoplistimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF62B1CDBBACD00D52A3E /* Shoplistimage.swift */; };
+		843AF62E1CDBBBF400D52A3E /* Shoplist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF62D1CDBBBF400D52A3E /* Shoplist+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8426921E1CD7D3B30076EAF6 /* shoplist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoplist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842692211CD7D3B30076EAF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		842692231CD7D3B30076EAF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		842692261CD7D3B30076EAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842692281CD7D3B30076EAF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8426922B1CD7D3B30076EAF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,10 @@
 		8426923F1CD7D57A0076EAF6 /* ReminderSortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderSortViewController.swift; sourceTree = "<group>"; };
 		842692411CD7D5AA0076EAF6 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
 		842692431CD7D5E90076EAF6 /* SettingUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingUserDefaults.swift; sourceTree = "<group>"; };
+		843AF6061CDBAB5200D52A3E /* shoplist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shoplist.xcdatamodel; sourceTree = "<group>"; };
+		843AF6081CDBAF5200D52A3E /* AddShoplistImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddShoplistImageController.swift; sourceTree = "<group>"; };
+		843AF62B1CDBBACD00D52A3E /* Shoplistimage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoplistimage.swift; sourceTree = "<group>"; };
+		843AF62D1CDBBBF400D52A3E /* Shoplist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shoplist+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				842692211CD7D3B30076EAF6 /* AppDelegate.swift */,
-				842692231CD7D3B30076EAF6 /* ViewController.swift */,
 				842692351CD7D4A70076EAF6 /* Constants.swift */,
 				842692371CD7D4C60076EAF6 /* ContainerViewController.swift */,
 				8426923B1CD7D5160076EAF6 /* QuickScrollViewController.swift */,
@@ -81,8 +86,12 @@
 				842692431CD7D5E90076EAF6 /* SettingUserDefaults.swift */,
 				842692391CD7D4EA0076EAF6 /* NavigationController.swift */,
 				842692251CD7D3B30076EAF6 /* Main.storyboard */,
+				843AF6081CDBAF5200D52A3E /* AddShoplistImageController.swift */,
+				843AF62B1CDBBACD00D52A3E /* Shoplistimage.swift */,
+				843AF62D1CDBBBF400D52A3E /* Shoplist+CoreDataProperties.swift */,
 				8426922A1CD7D3B30076EAF6 /* LaunchScreen.storyboard */,
 				842692281CD7D3B30076EAF6 /* Assets.xcassets */,
+				843AF6051CDBAB5200D52A3E /* shoplist.xcdatamodeld */,
 				8426922D1CD7D3B30076EAF6 /* Info.plist */,
 			);
 			path = shoplist;
@@ -160,16 +169,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842692241CD7D3B30076EAF6 /* ViewController.swift in Sources */,
 				8426923A1CD7D4EA0076EAF6 /* NavigationController.swift in Sources */,
+				843AF6091CDBAF5200D52A3E /* AddShoplistImageController.swift in Sources */,
 				842692441CD7D5E90076EAF6 /* SettingUserDefaults.swift in Sources */,
 				842692401CD7D57A0076EAF6 /* ReminderSortViewController.swift in Sources */,
+				843AF62C1CDBBACD00D52A3E /* Shoplistimage.swift in Sources */,
 				842692381CD7D4C60076EAF6 /* ContainerViewController.swift in Sources */,
 				842692421CD7D5AA0076EAF6 /* ShoppingListTableViewCell.swift in Sources */,
 				8426923C1CD7D5160076EAF6 /* QuickScrollViewController.swift in Sources */,
 				842692221CD7D3B30076EAF6 /* AppDelegate.swift in Sources */,
+				843AF6071CDBAB5200D52A3E /* shoplist.xcdatamodeld in Sources */,
 				842692361CD7D4A70076EAF6 /* Constants.swift in Sources */,
 				8426923E1CD7D5480076EAF6 /* iCloudReminderManager.swift in Sources */,
+				843AF62E1CDBBBF400D52A3E /* Shoplist+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +336,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		843AF6051CDBAB5200D52A3E /* shoplist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				843AF6061CDBAB5200D52A3E /* shoplist.xcdatamodel */,
+			);
+			currentVersion = 843AF6061CDBAB5200D52A3E /* shoplist.xcdatamodel */;
+			path = shoplist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 842692161CD7D3B20076EAF6 /* Project object */;
 }
