@@ -319,22 +319,7 @@ class ReminderSortViewController: UITableViewController {
         //Get the cell
         let cell : ShoppingListItemTableViewCell = tableView.dequeueReusableCellWithIdentifier("ReminderCell") as! ShoppingListItemTableViewCell
         
-        
-        
-        
-        
-        
-        
-        func configureCell(shoplist: Shoplist) {
-            imageIcon.image = shoplist.getShoplistImg()
-
-        
-        }
-        
-        
-        
-        
-        
+     
         
         //Based on the settings, set up the auto-capitalisation for the keyboard
         if SettingsUserDefaults.autoCapitalisation{
