@@ -6,6 +6,7 @@
 //  Copyright © 2016 Bobrovnikov. All rights reserved.
 //
 
+
 import Foundation
 
 class SettingsUserDefaults{
@@ -26,3 +27,4 @@ class SettingsUserDefaults{
         return NSUserDefaults.standardUserDefaults().boolForKey("dissableScreenLock")
     }
 }
+  
