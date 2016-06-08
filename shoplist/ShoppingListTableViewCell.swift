@@ -17,6 +17,11 @@ class ShoppingListItemTableViewCell: UITableViewCell, UITextFieldDelegate
     
     @IBOutlet weak var addNewButton: UIButton!
     
+    
+    
+ 
+    
+    
     //Setter for the cells reminder
     var reminder: EKReminder? {
         didSet {
@@ -78,6 +83,15 @@ class ShoppingListItemTableViewCell: UITableViewCell, UITextFieldDelegate
             }
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func setShoppingListItem(reminder: EKReminder) {
         

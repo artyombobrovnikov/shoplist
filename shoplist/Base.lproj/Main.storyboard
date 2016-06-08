@@ -9,22 +9,21 @@
         <scene sceneID="Urh-HJ-TF7">
             <objects>
                 <tableViewController id="MtR-ok-ohg" customClass="ReminderSortViewController" customModule="shoplist" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" rowHeight="51" sectionHeaderHeight="28" sectionFooterHeight="28" id="h21-ue-Yeq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="51" sectionHeaderHeight="28" sectionFooterHeight="28" id="h21-ue-Yeq">
                         <rect key="frame" x="0.0" y="0.0" width="379" height="663"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Organic-Food1-1" id="7NZ-Nk-NCD">
-                            <rect key="frame" x="0.0" y="0.0" width="379" height="95"/>
+                        <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Healthy-food-background1" id="Jrv-HK-ly3">
+                            <rect key="frame" x="0.0" y="0.0" width="379" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReminderCell" rowHeight="51" id="yti-3g-Cyj" customClass="ShoppingListItemTableViewCell" customModule="shoplist" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="123" width="379" height="51"/>
+                                <rect key="frame" x="0.0" y="108" width="379" height="51"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yti-3g-Cyj" id="sEH-2h-PpI">
-                                    <rect key="frame" x="0.0" y="0.0" width="379" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="379" height="51"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="Icon-40" translatesAutoresizingMaskIntoConstraints="NO" id="E8N-4b-1Cv">
@@ -87,7 +86,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAG-rH-JAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841.5" y="721.5"/>
+            <point key="canvasLocation" x="2777.5" y="717.5"/>
         </scene>
         <!--SHOPLIST-->
         <scene sceneID="w7E-xT-d7w">
@@ -101,21 +100,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5s-Of-sc8">
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5s-Of-sc8">
                                 <rect key="frame" x="-4" y="4" width="379" height="663"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="MtR-ok-ohg" kind="embed" id="cSn-7R-Is4"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="SHOPLIST" id="g2b-Zj-Fdv" colorLabel="IBBuiltInLabel-Blue">
                         <barButtonItem key="leftBarButtonItem" image="settings new 35x35" style="plain" id="VtG-ff-CsK">
                             <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uth-TX-5Hp" customClass="z">
                                 <rect key="frame" x="16" y="-8" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Копия settings-38"/>
+                                <state key="normal" image="settings-23-32"/>
                                 <connections>
                                     <action selector="settingsButtonTouchUpInside:" destination="qY9-ju-wyO" eventType="touchUpInside" id="0Ry-ne-jyE"/>
                                 </connections>
@@ -151,10 +151,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Healthy-food-background1" width="1500" height="350"/>
         <image name="Icon-40" width="40" height="40"/>
-        <image name="Organic-Food1-1" width="1684" height="419"/>
         <image name="settings new 35x35" width="35" height="35"/>
+        <image name="settings-23-32" width="32" height="32"/>
         <image name="Копия Add-Cart 58" width="58" height="58"/>
-        <image name="Копия settings-38" width="38" height="38"/>
     </resources>
 </document>

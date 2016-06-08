@@ -432,7 +432,6 @@ class ReminderSortViewController: UITableViewController {
 
 
 
-
   }
 
 

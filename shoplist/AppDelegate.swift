@@ -17,9 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        UINavigationBar.appearance().barTintColor = UIColor(red: 240.0/255, green: 43.0/255, blue: 43.0/255.0, alpha: 1.0)
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-        if let barFont = UIFont(name: "HelveticaNeue-Thin", size: 24.0){
+      
+        // Image Background Navigation Bar
+       //   let navBackgroundImage:UIImage! = UIImage(named: "background up.jpg")
+      //   UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, forBarMetrics: .Default)
+            
+       UINavigationBar.appearance().barTintColor = UIColor(red: 255.0/255.0, green: 100.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+       UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+      
+        
+        
+        
+        
+    
+        if let barFont = UIFont(name: "HelveticaNeue-Light", size: 22.0){
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),
             NSFontAttributeName: barFont]
             
